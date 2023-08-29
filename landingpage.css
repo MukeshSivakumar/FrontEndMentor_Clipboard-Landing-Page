@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+    --StrongCyan : hsl(171, 66%, 44%);
+    --Lightviolet: hsl(233, 100%, 69%);
+
+    --Dark_Grayish_Blue: hsl(210, 10%, 33%);
+    --Grayish_Blue: hsl(201, 11%, 66%);
+
+    --white : #fff;
+}
+
+body {
+    margin : 0;
+    /* max-width : 1366px; */
+    width : 100%;
+    /* padding : 20px; */
+    background: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    box-sizing: border-box;
+}
+
+h1,h2,h3 {
+    color : var(--Dark_Grayish_Blue);
+    font-weight: 600;
+}
+
+p{
+    color : var(--Grayish_Blue);
+    font-weight: 400;
+}
+.page1 {
+    width : 70%;
+    text-align: center;
+    margin : 100px auto;
+}
+
+.page1 .main-head{
+    font-size: 40px;
+}
+
+.page1 p{
+    width : 50%;
+    text-align: center;
+    margin : 20px auto;
+}
+
+.btn {
+    width : fit-content;
+    padding : 15px 35px;
+    margin : 20px;
+    border-radius: 50px;
+    border:none;
+    color : var(--white);
+    font-weight: 600;
+    font-size: 15px;
+    transition : 0.5s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform :translateY(-3px);
+}
+
+.ios-btn{
+    background-color: var(--StrongCyan);
+    /* border : 2px solid var(--StrongCyan); */
+    box-shadow: 0px 2px 5px var(--StrongCyan);
+}
+
+.mac-btn {
+    background-color: var(--Lightviolet);
+    box-shadow: 0px 2px 5px var(--Lightviolet);
+}
+
+
+/* ---------------------------page2-------------------- */
+
+.page2 {
+    text-align: center;
+}
+
+.page2 p{
+    width : 50%;
+    margin : 30px auto;
+}
+
+/* -------------------------page3---------------------- */
+
+.page3 {
+    margin : 100px 0;
+    display : flex;
+    flex-wrap: wrap;
+    gap : 30px;
+    /* justify-content: space-between; */
+}
+
+.page3-left img{
+    position : relative;
+    left : -50px;
+}
+
+.page3 .page3-right {
+    margin-top: 20px;
+}
+
+.page3-right .page3-items{
+    margin : 50px 0;
+}
+
+.page3-items p{
+    width : 400px;
+}
+
+/* ----------------------page4------------------------ */
+
+
+.page4 {
+    text-align: center;
+    margin : 150px 0 0;
+}
+
+.page4 p{
+    width : 600px;
+    margin : 0 auto;
+}
+
+.page4 .page4-image{
+    margin-top : 100px;
+}
+
+/* ----------------------page5-------------------------- */
+
+.page5 {
+    /* width: 80%; */
+    text-align: center;
+}
+
+
+
+.page5-items { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap : 20px;
+}
+.page5-item-content{
+    padding : 5px;
+}
+.page5-item-content p{
+    width: 300px;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.page5-item-content>*{
+    margin : 20px auto;
+}
+
+.page5-item-content:nth-child(2),
+.page5-item-content:nth-child(3){
+    margin-top : 10px;
+}
+
+/* ----------------page6----------------- */
+
+.page6 {
+    margin : 100px auto;
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* --------------page7------------------ */
+
+.page7{
+    text-align: center;
+    margin : 100px 0;
+}
+
+.page7 p{
+    width : 650px;
+    margin : 20px auto;
+}
+
+/* -----------------footer------------------- */
+footer {
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top : 20px;
+    padding-bottom: 10px;
+    background-color : rgba(211, 211, 211,0.3);
+    width : 100%;
+    font-weight: bold;
+    color : var(--Dark_Grayish_Blue);
+}
+footer .footer-logo img{
+    width : 50px;
+    height : 50px;
+    /* background-size: 100px; */
+    margin : 20px auto 10px;
+}
+
+.footer-items {
+    display : flex;
+    width : 60%;
+    /* gap :60px; */
+    
+    /* height : 100%; */
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+.footer-items .footer-item-div div:hover {
+    color : var(--StrongCyan);
+}
+
+.footer-items div{
+   /* padding : 0 30px 30px;  */
+   margin : 10px 30px;
+}
+footer .icons {
+    margin-top : 30px;
+}
+footer .icons i{
+    font-size: 25px;
+    padding : 10px;
+    /* margin : 30px 0 0; */
+    transition: 0.5s;
+}
+
+footer .icons i:hover{
+    color : var(--StrongCyan);
+    cursor: pointer;
+    transform:translateY(-3px);
+}
+
+
+
+@media screen and (max-width:600px) {
+    body{
+        /* max-width : 700px; */
+        width : 100%;
+    }
+
+    body>*{
+        width : 70%;
+        text-align : center;
+    }
+
+    /* --------page3-------- */
+
+    .page3-left img{
+        width : 100%;
+        /* height : 200px; */
+        position : relative;
+        left :0;
+    }
+
+    /* ---------page4--------- */
+    .page4-image img {
+        width : 80%;
+    }
+
+    .page4 p {
+        width : 70%;
+    }
+
+    /* ------------page7---------- */
+    .page7 p{
+        width : 100%;
+    }
+
+    /* -----------footer----------- */
+
+
+    footer {
+        width : 100%;
+    }
+}
